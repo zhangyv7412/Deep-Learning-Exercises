@@ -23,3 +23,5 @@ for i in range(iteration):
         print(f"Interration {i} : Loss = {loss}")
 #输出最终参数
 print(f"Final parameters: w0 = {w[0]}, w1 = {w[1]}, w2 = {w[2]}")
+
+

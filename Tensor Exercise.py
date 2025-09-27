@@ -18,7 +18,7 @@ print(t3)
 arr = np.array([1,2,3])
 t_np = torch.tensor(arr)
 print(t_np)
-'''
+
 import torch
 x = torch.tensor([1, 2, 3, 4, 5])
 mask = x > 2  # 生成一个布尔掩码
@@ -32,3 +32,10 @@ print(filtered_x)  # tensor([3, 4, 5])
 # 用布尔掩码选出大于 2 的值,并赋值为0
 x[mask]=0
 print(x) # tensor([1, 2, 0, 0, 0])
+'''
+
+tensor = torch.rand(3,4)
+
+print(f"Shape of tensor: {tensor.shape}")
+print(f"Datatype of tensor: {tensor.dtype}")
+print(f"Device tensor is stored on: {tensor.device}")
