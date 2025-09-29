@@ -9,7 +9,7 @@ bias = torch.tensor(4.4) #初始化偏置
 targets = inputs @ weights + bias + 0.1 * torch.randn(100,1) 
 
 #创建一个SummaryWriter实例
-writer = SummaryWriter(log_dir='')
+writer = SummaryWriter(log_dir='/Users/zhangyu/Desktop/LOSS')
 
 #初始化参数
 w = torch.rand((3,1),requires_grad=True)
